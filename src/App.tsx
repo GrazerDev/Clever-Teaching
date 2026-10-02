@@ -181,15 +181,15 @@ export default function App() {
     },
   ];
 
-  // Staff list matching the OG website layout: CurryMan & GenerourBooch removed, Master_Grazer added as DEVELOPER
+  // Staff list matching the OG website layout: CurryMan & GenerourBooch removed, Master_Grazer added as DEVELOPER, Icebox123 as HEAD MOD
   const staffMembers = [
     { name: 'MasterMonkey', role: 'OWNER' },
     { name: 'AllforHim0064', role: 'OWNER' },
     { name: 'TheProIndex', role: 'ADMIN' },
     { name: 'Demi', role: 'ADMIN' },
     { name: 'Master_Grazer', role: 'DEVELOPER' },
+    { name: 'Icebox123', role: 'HEAD MOD' },
     { name: 'Nighttime_', role: 'MODERATOR' },
-    { name: 'Icebox123', role: 'MODERATOR' },
   ];
 
   const faqs = [
@@ -243,11 +243,11 @@ export default function App() {
         {/* Real Clever Teaching Logo + Wordmark */}
         <a href="#hero" className="flex items-center gap-3 no-underline">
           <img 
-            src="/ct.png" 
+            src="./ct.png" 
             alt="Clever Teaching Logo" 
             style={{ height: '38px', width: 'auto', display: 'block' }}
             onError={(e) => {
-              (e.target as HTMLImageElement).src = '/favicon.png';
+              (e.target as HTMLImageElement).src = './favicon.png';
             }}
           />
           <div className="px" style={{ fontWeight: 700, fontSize: '26px', color: '#F2B632', letterSpacing: '0.5px' }}>
