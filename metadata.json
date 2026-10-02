@@ -1,0 +1,8 @@
+{
+  "name": "Remix Clever Teaching",
+  "description": "The Clever way of playing Minecraft, trusted by hundreds of players daily. Connect on Java (Java.clever-teaching.com) and Eaglercraft (wss://clever-teaching.com).",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

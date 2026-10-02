@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --accent: #F2B632;
+    --grass: #5FBF4A;
+    --dark-bg: #12201B;
+    --card-dark: #1B3027;
+    --border-dark: #2C4A3D;
+    --cream: #F3EBD3;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #12201B;
+    color: #F3EBD3;
+    font-family: 'Figtree', system-ui, -apple-system, sans-serif;
+    line-height: 1.55;
+  }
+}
+
+.px {
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+/* Custom Minecraft-style solid pixel borders */
+.mc-box-dark {
+  background: #1B3027;
+  border: 3px solid #2C4A3D;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.mc-box-dark:hover {
+  border-color: #5FBF4A;
+}
+
+.mc-box-light {
+  background: #FFFFFF;
+  border: 3px solid #12201B;
+  color: #12201B;
+  transition: transform 0.15s ease;
+}
+
+.mc-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  user-select: none;
+  transition: transform 0.1s ease, filter 0.15s ease;
+}
+
+.mc-btn:hover {
+  filter: brightness(1.08);
+}
+
+.mc-btn:active {
+  transform: translateY(2px);
+}
+
+.mc-btn-accent {
+  background: #F2B632;
+  color: #0B1511;
+  border-bottom: 4px solid #B7791F;
+}
+
+.mc-btn-accent:active {
+  border-bottom-width: 2px;
+}
+
+.mc-btn-grass {
+  background: #5FBF4A;
+  color: #0B1511;
+  border-bottom: 4px solid #2F855A;
+}
+
+.mc-btn-grass:active {
+  border-bottom-width: 2px;
+}
+
+.mc-btn-dark {
+  background: #1B3027;
+  color: #F3EBD3;
+  border: 2px solid #3A5247;
+  border-bottom: 4px solid #0B1511;
+}
+
+.mc-btn-dark:active {
+  border-bottom-width: 2px;
+}
+
+.mc-tag {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 3px 8px;
+  display: inline-block;
+  background: #0B1511;
+  color: #5FBF4A;
+}
+
+.mc-tag-warn {
+  background: #0B1511;
+  color: #F2B632;
+}
+
+.mc-ip-box {
+  background: #0B1511;
+  padding: 12px 16px;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 20px;
+  color: #F2B632;
+  word-break: break-all;
+  border: 2px solid #2C4A3D;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.mc-lbl {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #5FBF4A;
+  font-weight: 700;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0B1511;
+}
+::-webkit-scrollbar-thumb {
+  background: #2C4A3D;
+  border: 2px solid #0B1511;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5FBF4A;
+}
