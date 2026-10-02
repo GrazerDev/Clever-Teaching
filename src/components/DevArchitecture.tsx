@@ -130,7 +130,7 @@ export const DevArchitecture: React.FC = () => {
                   HEAD DEVELOPER & SYSTEMS ARCHITECT
                 </span>
                 <span className="text-xs font-mono text-[#8FA89B]">
-                  Discord: <strong className="text-emerald-300">Master_Grazer</strong>
+                  Community: <strong className="text-emerald-300">Clever Teaching Team</strong>
                 </span>
               </div>
 

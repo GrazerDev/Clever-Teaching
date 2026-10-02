@@ -235,7 +235,7 @@ export const STAFF_MEMBERS: StaffMember[] = [
     rankType: 'OWNER',
     tagColor: '#EF4444',
     bio: 'Founder of Clever Teaching. Oversees overarching vision, community growth, and server operations since day one.',
-    discord: 'MasterMonkey#0001',
+    discord: '@MasterMonkey',
     avatarSeed: 'MasterMonkey',
   },
   {
@@ -244,7 +244,7 @@ export const STAFF_MEMBERS: StaffMember[] = [
     rankType: 'OWNER',
     tagColor: '#EF4444',
     bio: 'Co-owner managing server funding, store management, partner relations, and community safety.',
-    discord: 'AllforHim#0064',
+    discord: '@AllforHim',
     avatarSeed: 'AllforHim0064',
   },
   {
@@ -253,7 +253,7 @@ export const STAFF_MEMBERS: StaffMember[] = [
     rankType: 'LEAD_DEV',
     tagColor: '#10B981',
     bio: 'Head of Infrastructure, Custom Plugin Architecture, Sentinel Anti-Cheat, and High-Throughput Network Routing across Java & Eaglercraft.',
-    discord: 'Master_Grazer',
+    discord: '@Master_Grazer',
     avatarSeed: 'Master_Grazer',
     specialBadge: 'HEAD DEVELOPER ⭐',
   },
@@ -263,7 +263,7 @@ export const STAFF_MEMBERS: StaffMember[] = [
     rankType: 'ADMIN',
     tagColor: '#F59E0B',
     bio: 'Lead in-game administrator handling player disputes, economy auditing, and staff coordination.',
-    discord: 'TheProIndex#2211',
+    discord: '@TheProIndex',
     avatarSeed: 'TheProIndex',
   },
   {
@@ -272,7 +272,7 @@ export const STAFF_MEMBERS: StaffMember[] = [
     rankType: 'ADMIN',
     tagColor: '#F59E0B',
     bio: 'Manages community events, ticket escalations, player feedback, and server social channels.',
-    discord: 'Demi#9982',
+    discord: '@Demi',
     avatarSeed: 'Demi',
   },
   {
@@ -281,7 +281,7 @@ export const STAFF_MEMBERS: StaffMember[] = [
     rankType: 'MOD',
     tagColor: '#3B82F6',
     bio: 'Head Moderator overseeing chat moderation, anti-cheat surveillance, and community enforcement across all realms.',
-    discord: 'Icebox123#8712',
+    discord: '@Icebox123',
     avatarSeed: 'Icebox123',
   },
   {
@@ -290,7 +290,7 @@ export const STAFF_MEMBERS: StaffMember[] = [
     rankType: 'MOD',
     tagColor: '#3B82F6',
     bio: 'Dedicated moderator maintaining a positive, family-friendly, and cheat-free environment 24/7.',
-    discord: 'Nighttime_#4431',
+    discord: '@Nighttime',
     avatarSeed: 'Nighttime_',
   },
 ];

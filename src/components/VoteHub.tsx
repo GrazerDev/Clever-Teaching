@@ -10,7 +10,7 @@ export const VoteHub: React.FC = () => {
   const handleVote = (name: string, url: string) => {
     playLevelUpSound();
     setVotedSites((prev) => ({ ...prev, [name]: true }));
-    window.open(url, '_blank');
+    window.open(url, '_blank', 'noopener,noreferrer');
   };
 
   const calculatedRewards = {

@@ -23,7 +23,7 @@ export default function App() {
     version: '1.8.x - 1.21.x',
     motd: 'Clever Teaching Minecraft Server Network',
     loading: false,
-    lastChecked: 'Just now',
+    lastChecked: 'Live',
   });
 
   // FAQ Accordion state
@@ -47,14 +47,14 @@ export default function App() {
             version: ver,
             motd: cleanMotd,
             loading: false,
-            lastChecked: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' }),
+            lastChecked: 'Live',
           });
         } else {
           setServerStatus((prev) => ({
             ...prev,
             online: true,
             loading: false,
-            lastChecked: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' }),
+            lastChecked: 'Live',
           }));
         }
       })
@@ -508,7 +508,10 @@ export default function App() {
             <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '12px', borderBottom: '1px solid #2C4A3D', paddingBottom: '10px', marginBottom: '12px' }}>
               <div className="lbl" style={{ color: '#5FBF4A' }}>REAL-TIME SERVER STATUS</div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '13px', fontFamily: "'JetBrains Mono', monospace" }}>
-                <span>Checked: {serverStatus.lastChecked}</span>
+                <span className="flex items-center gap-1.5 text-emerald-400">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span>Live Sync</span>
+                </span>
                 <button
                   onClick={fetchServerStatus}
                   className="flex items-center gap-1 text-[#5FBF4A] hover:underline cursor-pointer"

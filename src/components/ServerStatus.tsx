@@ -9,7 +9,7 @@ interface ServerStatusProps {
 export const ServerStatus: React.FC<ServerStatusProps> = ({ onlinePlayers }) => {
   const [isPinging, setIsPinging] = useState(false);
   const [pingLatency, setPingLatency] = useState(14);
-  const [lastPingedTime, setLastPingedTime] = useState('Just now');
+  const [lastPingedTime, setLastPingedTime] = useState('Live');
 
   const handleManualPing = () => {
     playClickSound();
@@ -19,7 +19,7 @@ export const ServerStatus: React.FC<ServerStatusProps> = ({ onlinePlayers }) => 
       const nextPing = Math.floor(12 + Math.random() * 6);
       setPingLatency(nextPing);
       setIsPinging(false);
-      setLastPingedTime(new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' }));
+      setLastPingedTime('Live');
       playLevelUpSound();
     }, 600);
   };
@@ -54,8 +54,9 @@ export const ServerStatus: React.FC<ServerStatusProps> = ({ onlinePlayers }) => 
             </div>
 
             <div className="flex items-center gap-3">
-              <span className="text-xs text-[#8FA89B] font-mono">
-                Updated: <span className="text-slate-300">{lastPingedTime}</span>
+              <span className="text-xs text-emerald-400 font-mono flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Live Sync</span>
               </span>
               <button
                 onClick={handleManualPing}
